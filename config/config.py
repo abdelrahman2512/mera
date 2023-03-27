@@ -36,7 +36,7 @@ SONG_DOWNLOAD_DURATION = int(180) # Remember to give value in Minutes
 LOG_GROUP_ID = -1001858425232
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = "Mera ♡"
+MUSIC_BOT_NAME = "Mera"
 
 # Your User ID.
 OWNER_ID = 5807591860
