@@ -17,81 +17,67 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = 20993785
+API_HASH = "a5378e174b86b9fc3cf1ef284e2767b4"
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = "5997575986:AAG7DMd3Mx7XeWfaswPw-frotYPLFXDgKOY"
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = "mongodb+srv://devcoder:aaee1122@cluster0.m4rtiot.mongodb.net/?retryWrites=true&w=majority"
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
-DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "60")
-)  # Remember to give value in Minutes
+DURATION_LIMIT_MIN = int(180) # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
-SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
-)  # Remember to give value in Minutes
+SONG_DOWNLOAD_DURATION = int(180) # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = -1001858425232
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = "Mera ♡"
 
 # Your User ID.
-OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
-)  # Input type must be interger
+OWNER_ID = 5807591860
+# Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = "469b166b-d331-4980-80bc-22f15fb46965"
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = meraa
 
 # For customized or modified Repository
-UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
-)
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_REPO = "https://github.com/abdelrahman2512/mera"
+UPSTREAM_BRANCH = "master"
 
 # GIT TOKEN ( if your edited repo is private)
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = "None"
 
 # Only  Links formats are  accepted for this Var value.
-SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
-)  # Example:- https://t.me/TheYukki
-SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", None
-)  # Example:- https://t.me/YukkiSupport
+SUPPORT_CHANNEL = "SpdBots"
+SUPPORT_GROUP = "y6697"
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = True
 
 # Time after which you're assistant account will leave chats automatically.
-AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
-)  # Remember to give value in Seconds
+AUTO_LEAVE_ASSISTANT_TIME = 5400
+# Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
-AUTO_SUGGESTION_TIME = int(
-    getenv("AUTO_SUGGESTION_TIME", "5400")
-)  # Remember to give value in Seconds
+AUTO_SUGGESTION_TIME = int(5400)
+# Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
-AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
+AUTO_DOWNLOADS_CLEAR = True
 
 # Set it True if you want to bot to suggest about bot commands to random chats of your bots.
-AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
+AUTO_SUGGESTION_MODE = True
 
 # Set it true if you want your bot to be private only [You'll need to allow CHAT_ID via /authorise command then only your bot will play music in that chat.]
-PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
+PRIVATE_BOT_MODE = False
 
 # Time sleep duration For Youtube Downloader
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
@@ -135,7 +121,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = "BAFAVvkAOhaozRvwQN1PlA1yLSFyl8BIFz4nQv9o5cjRNZn-SbqLqTgRBfa6BTq6ktInCn5SQghxOjlpZwcPeg0aLgTdGOcrRNP9jgOw2Psmb66peeo8H4OU7wZ7YpQIsaUWRLzwEjqkJtcT1pNNbe_KPES1KTtOb5cPEnj-a-jWdUCvxXaRLbF0lwUiFKURIigJ_et49oq7sODELTLIQ4cWjxrMPX4p3GRsPsRyS3HqNW9WSpij-z6CE8wVuEPaVKtKAYInRdPzan1r7YAPrmqpuz1h3EVVEi7uLF7cd_vYUpRCuNL-sDK4icMxhyhcYPU3Jt0njGQZpYKqET4i2Cdj2wVS2wAAAAFZkgLqAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
