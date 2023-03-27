@@ -46,11 +46,11 @@ OWNER_ID = 5807591860
 HEROKU_API_KEY = "469b166b-d331-4980-80bc-22f15fb46965"
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = meraa
+HEROKU_APP_NAME = "meraa"
 
 # For customized or modified Repository
 UPSTREAM_REPO = "https://github.com/abdelrahman2512/mera"
-UPSTREAM_BRANCH = "master"
+UPSTREAM_BRANCH = "main"
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = "None"
