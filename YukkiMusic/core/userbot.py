@@ -22,8 +22,8 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            api_id=20993785
-            api_hash="a5378e174b86b9fc3cf1ef284e2767b4"
+            api_id=20993785,
+            api_hash="a5378e174b86b9fc3cf1ef284e2767b4",
             session_name="BAFAVvkAOhaozRvwQN1PlA1yLSFyl8BIFz4nQv9o5cjRNZn-SbqLqTgRBfa6BTq6ktInCn5SQghxOjlpZwcPeg0aLgTdGOcrRNP9jgOw2Psmb66peeo8H4OU7wZ7YpQIsaUWRLzwEjqkJtcT1pNNbe_KPES1KTtOb5cPEnj-a-jWdUCvxXaRLbF0lwUiFKURIigJ_et49oq7sODELTLIQ4cWjxrMPX4p3GRsPsRyS3HqNW9WSpij-z6CE8wVuEPaVKtKAYInRdPzan1r7YAPrmqpuz1h3EVVEi7uLF7cd_vYUpRCuNL-sDK4icMxhyhcYPU3Jt0njGQZpYKqET4i2Cdj2wVS2wAAAAFZkgLqAA"
         )
         self.two = Client(
