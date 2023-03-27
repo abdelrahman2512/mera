@@ -39,7 +39,11 @@ LOG_GROUP_ID = -1001858425232
 MUSIC_BOT_NAME = "Mera"
 
 # Your User ID.
-OWNER_ID = 5807591860
+OWNER_ID = list(
+
+    map(int, getenv("OWNER", "").split())
+
+) 
 # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
